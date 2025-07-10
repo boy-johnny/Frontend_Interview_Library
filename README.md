@@ -147,79 +147,92 @@
 
 ## React
 
-**Context API**
+1. React 基礎概念
+	1.	React 是什麼？它的核心概念有哪些？
+	2.	React 的 Virtual DOM 是什麼？它與真實 DOM 有什麼差別？
+	3.	React 為什麼要使用 key？key 有什麼限制與設計原則？
+	4.	React 的 reconciliation 機制是什麼？
 
-1. useContext 的作用是什麼？它如何解決 prop drilling？
 
-**Refs**
+2. JSX 與元件設計
+	1.	JSX 是什麼？它與 HTML 有什麼不同？
+	2.	React 元件有哪些種類？Class 與 Function Component 的差異？
+	3.	在 JSX 中為什麼不能直接用 if-else？
+	4.	React 的元件命名與檔案結構有什麼建議？
 
-2. useRef 的作用是什麼？常見用途？
 
-**Performance Optimization**
+3. Props 與 State
+	1.	props 和 state 有什麼不同？
+	2.	如何在元件中更新 state？需要注意什麼？
+	3.	state 更新是同步還是非同步？
+	4.	如何處理多層 props 傳遞問題？
 
-3. React.memo 的作用是什麼？何時使用？
-4. 如何優化 React 應用程式的性能？請列舉常見策略。
-5. 什麼是 Code Splitting？在 React 中如何實現？
-6. 什麼是 Lazy Loading？在 React 中如何實現？
-7. 如何處理大型列表的性能問題？（如使用 react-window, react-virtualized）
 
-**Error Handling**
+4. React Hooks
+	1.	React Hooks 是什麼？為什麼出現？
+	2.	useState 是什麼？如何使用？
+	3.	useEffect 的用途是什麼？會在哪些情境下被呼叫？
+	4.	useRef 有什麼用途？常見使用場景有哪些？
+	5.	useCallback 與 useMemo 有什麼差別？
+	6.	自定義 Hook 要怎麼寫？有什麼限制？
 
-8. 如何在 React 中處理錯誤？什麼是 Error Boundaries？
-9. Error Boundaries 的限制有哪些？
 
-**Testing**
+5. 元件生命週期與事件處理
+	1.	React 的生命週期分為哪幾個階段？
+	2.	useEffect 模擬 componentDidMount 與 componentWillUnmount 的方式是什麼？
+	3.	React 中事件處理與原生 DOM 的差別在哪？
 
-10. 如何測試 React 組件？請說明常見的測試工具（如 Jest, React Testing Library）。
-11. 什麼是單元測試（Unit Testing）？什麼是整合測試（Integration Testing）？在 React 中如何應用？
 
-**State Management**
+6. 元件間溝通與 Context
+	1.	如何在 React 中進行元件間溝通？
+	2.	props drilling 是什麼？如何避免？
+	3.	React 的 Context API 是什麼？適合用在哪些情境？
 
-12. 除了 React 內建的 Context API 和 useReducer，還有哪些狀態管理工具？（如 Redux, Zustand, Recoil）
-13. 請說明 Redux 的核心概念（Store, Reducer, Action）。
-14. Redux Toolkit (RTK) 解決了 Redux 的哪些痛點？
-15. 什麼是資料流（Data Flow）？請比較單向資料流與雙向資料流。
 
-**Styling in React**
+7. 效能優化與 Re-render
+	1.	為什麼 React 會重新渲染元件？有哪些方式可以避免不必要的渲染？
+	2.	useMemo 與 useCallback 的使用時機與風險？
+	3.	React.memo 是什麼？什麼情況下會使用？
 
-16. 在 React 中有哪些常見的樣式處理方法？（如 CSS Modules, Styled Components, Emotion, Tailwind CSS）
-17. 請比較 CSS Modules 和 Styled Components 的優缺點。
 
-**Advanced Concepts**
+8. React Router 與導航
+	1.	React Router 是什麼？怎麼使用？
+	2.	BrowserRouter 與 HashRouter 的差異？
+	3.	如何在程式中導航到其他頁面？
 
-18. 什麼是 Higher-Order Components (HOCs)？請舉例說明。
-19. HOCs 有哪些缺點？Hooks 如何改進？
-20. 什麼是 Render Props？請舉例說明。
-21. 什麼是 Portals？何時使用 Portals？
-22. 什麼是 Concurrent Mode？它解決了什麼問題？
-23. 什麼是 Suspense？它有什麼用途？
 
-**Server-Side Rendering (SSR)**
+9. 表單處理與狀態管理
+	1.	如何在 React 處理表單資料？
+	2.	什麼是 controlled 與 uncontrolled 元件？
+	3.	React Hook Form 是什麼？使用情境？
+	4.	為什麼需要像 Redux、Zustand 等狀態管理工具？
 
-24. 什麼是 Server-Side Rendering (SSR)？它與 Client-Side Rendering (CSR) 有何不同？
-25. SSR 的優點和缺點分別是什麼？
-26. 在 React 中如何實現 SSR？（如使用 Next.js）
 
-**Next.js**
+10. 測試與開發工具
+	1.	React 專案常見的測試工具有哪些？
+	2.	如何撰寫 React 單元測試？有哪些原則？
+	3.	Storybook 是什麼？有什麼實際效益？
 
-27. 什麼是 Next.js？它提供了哪些功能？
-28. 請說明 Next.js 中的 Pages Router 和 App Router 的差異。
-29. 什麼是 Static Site Generation (SSG) 和 Server-Side Rendering (SSR)？在 Next.js 中如何選擇？
-30. 什麼是 Incremental Static Regeneration (ISR)？
 
-**TypeScript with React**
+11. React 生態系與架構設計
+	1.	Next.js 是什麼？它與 React 有什麼差異？
+	2.	如何選擇適合的狀態管理工具？
+	3.	React 專案如何模組化？常見架構怎麼設計？
 
-31. 如何在 React 專案中使用 TypeScript？
-32. 請說明常見的 React 組件 TypeScript 型別定義（如 FunctionComponent, FC）。
 
-**Design Patterns**
+12. 實務應用與開發模式
+	1.	React 專案中常見的資料流模式是什麼？
+	2.	如何設計大型應用的元件架構？
+	3.	怎麼做 Error Handling 與 Loading 狀態管理？
 
-33. 在 React 開發中，有哪些常見的設計模式？
 
-**Best Practices**
+13. 其他通識與邏輯題
+	1.	React 中 custom prop（例如 <div blahblahblah={true} />）會有什麼結果？為什麼？
+	2.	git clone、git pull 和 git fetch 差在哪？
+	3.	說明 Git stash 的用途與使用情境？
+	4.	說明 Git 分支的作用與多人協作的意義？
+	5.	JavaScript 的 microtask 與 macrotask 差異是？
 
-34. 在開發 React 應用程式時，有哪些推薦的最佳實踐？
-35. 如何編寫可讀性高且易於維護的 React 組件？
 
 ## Git & Github
 
